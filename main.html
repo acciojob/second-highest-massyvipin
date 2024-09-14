@@ -8,6 +8,24 @@
 
 <body>	
 	<script>
+
+		function unique(arr) {
+			const freq = {};
+			for (let i = 0; i < arr.length; i++) {
+				if (freq.hasOwnProperty(arr[i])) {
+					freq(arr[i]) += 1;
+				}
+				else{
+				freq(arr[i]) = 1;
+					}
+				}
+		}
+		if (object.value(freq).sort()[object.value(freq).length-1]===1) {
+			return true;
+			else{
+				return false;
+			}
+		}
 		function secondHighest(arr) {
 			//Write your code here
 			if (arr.length>1) {
@@ -23,7 +41,7 @@
 			}
 		}
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
