@@ -12,13 +12,16 @@
 			//Write your code here
 			if (arr.length>1) {
 				arr.sort((a,b)=> a-b);
+				if (arr[0]===arr[arr.length-1]) {
+					return -Infinity;
 				return arr[arr.length-2];
+				
+				}
 			}
 			else{
 				return -Infinity;
 			}
 		}
-
 		function Main() {
 			var n = prompt("Enter the number of elements");
 			var arr = [];
