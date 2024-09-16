@@ -13,11 +13,11 @@
 			const freq = {};
 			for (let i = 0; i < arr.length; i++) {
 				if (freq.hasOwnProperty(arr[i]))
-					freq(arr[i]) += 1;
+					freq[arr[i]] += 1;
 				else
-				freq(arr[i]) = 1;
+				freq[arr[i]] = 1;
 		}
-		if (Object.value(freq).sort()[object.value(freq).length-1]===1)
+		if (Object.values(freq).sort()[Object.values(freq).length-1]===1)
 				return true;
 			else
 				return false;
@@ -34,12 +34,12 @@
 			}
 		}
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			// alert(secondHighest(arr));
 		}
 		Main();
 	</script>
