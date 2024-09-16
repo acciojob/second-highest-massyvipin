@@ -12,30 +12,23 @@
 		function unique(arr) {
 			const freq = {};
 			for (let i = 0; i < arr.length; i++) {
-				if (freq.hasOwnProperty(arr[i])) {
+				if (freq.hasOwnProperty(arr[i]))
 					freq(arr[i]) += 1;
-				}
-				else{
+				else
 				freq(arr[i]) = 1;
-					}
-				}
 		}
-		if (object.value(freq).sort()[object.value(freq).length-1]===1) {
-			return true;
-			else{
+		if (Object.value(freq).sort()[object.value(freq).length-1]===1)
+				return true;
+			else
 				return false;
-			}
+		
 		}
 		function secondHighest(arr) {
 			//Write your code here
-			if (arr.length>1) {
+			if (arr.length > 1 && unique(arr)) {
 				arr.sort((a,b)=> a-b);
-				if (arr[0]===arr[arr.length-1]) {
-					return -Infinity;
 				return arr[arr.length-2];
-				
 				}
-			}
 			else{
 				return -Infinity;
 			}
